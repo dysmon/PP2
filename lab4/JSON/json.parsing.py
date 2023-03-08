@@ -1,9 +1,12 @@
+''' 
+json.dump() Python objects into a JSON
+json.load() JSON objects into a Python
+'''
 import json
 
 # Load the JSON file
 with open("sample-data.json", "r") as file:
-    data = json.load(file)
-
+    data = json.load(file) 
 # Print the header
 print('Interface Status')
 print('='*80)
