@@ -1,4 +1,5 @@
-import datetime
+# ex: Write a Python program to calculate two date difference in seconds.
+import datetime 
 
 # Define the two dates
 date1 = datetime.datetime(2023, 2, 20, 12, 0, 0)

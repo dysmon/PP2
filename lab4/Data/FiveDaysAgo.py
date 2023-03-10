@@ -1,3 +1,4 @@
+# ex: Write a Python program to subtract five days from current date.
 import datetime
 
 today = datetime.date.today()

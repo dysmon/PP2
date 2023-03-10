@@ -1,3 +1,4 @@
+#ex: Write a Python program to print yesterday, today, tomorrow.
 import datetime
 
 today = datetime.date.today()
