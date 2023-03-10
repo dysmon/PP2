@@ -2,6 +2,7 @@ import os
 
 path = "D:\\Desktop\\KBTU_PP2" 
 
+# 1 Write a Python program to list only directories, files and all directories, files in a specified path.
 def directorites():
     # List only directories
     print("Directories:")
@@ -20,6 +21,7 @@ def directorites():
     for item in os.listdir(path):
         print(item)
 
+# 2 Write a Python program to check for access to a specified path. Test the existence, readability, writability and executability of the specified path
 def Accessing():
     # Check if path exists
     if os.path.exists(path):
@@ -45,6 +47,7 @@ def Accessing():
     else:
         print(f"{path} does not exist")
 
+# 3 Write a Python program to test whether a given path exists or not. If the path exist find the filename and directory portion of the given path.
 def Existance():
     if os.path.exists(path):
         print(f"{path} exists")
@@ -59,12 +62,14 @@ def Existance():
     else:
         print(f"{path} does not exist")
 
+# 4 Write a Python program to count the number of lines in a text file.
 def number_of_lines():
     path = "D:\\Desktop\\KBTU_PP2\\PP2\\lab5\\regex.py"
     with open(path, "r", encoding="UTF-8") as f:
        lines = f.readlines() # -> reads all lines  
        print(len(lines))
 
+# 5 Write a Python program to write a list to a file.
 def write_list():
     list_to_write = ["Java", "Python", "Golang"]
     with open("text1.txt", "w", encoding="UTF-8") as f:
@@ -73,17 +78,20 @@ def write_list():
     with open("text1.txt", "r", encoding="UTF-8") as fi:
         print(fi.read())
 
+# 6 Write a Python program to generate 26 text files named A.txt, B.txt, and so on up to Z.txt
 def a_to_z():
     for i in range(65,91):
         with open(f"{chr(i)}.txt", "x") as _:
             pass
 
+# 7 Write a Python program to copy the contents of a file to another file
 def copy_files():
     with open("text1.txt", "r", encoding="UTF-8") as f:
         content = f.read()
     with open("copy.txt", "a", encoding="UTF-8") as fi:
         fi.write(content)
 
+# 8 Write a Python program to delete file by specified path. Before deleting check for access and whether a given path exists or not.
 def delete():
     path = ""
     if os.path.exists(path) and os.access(path, os.R_OK) and os.access(path, os.W_OK):
