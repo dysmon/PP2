@@ -99,5 +99,4 @@ def drawShape(screen, mouse_pos, shape, color):
         pygame.draw.rect(screen, color, rect, 3)
     elif shape == 'circle':
         pygame.draw.circle(screen, color, (x, y), 100, 3)
-
 main()
