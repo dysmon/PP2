@@ -29,12 +29,11 @@ while running:
    minute = datetime.datetime.now().minute   
    x = ((-6) * minute) % 360
    y = ((-6) * second) % 360
-
    rot_hand, x = rot_center(hand, x, HEIGHT / 2, WIDTH / 2)
    rot_hand1, y = rot_center(hand1, y, HEIGHT / 2, WIDTH / 2)
+   print(rot_hand)
    screen.blit(mickey, (0, 0))
    screen.blit(rot_hand, x)
    screen.blit(rot_hand1, y)
 
    pygame.display.update()
-
